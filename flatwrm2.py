@@ -147,7 +147,7 @@ def read_data(data_in, cadence=1./60/24):
 
 
 
-def prediction(data_in,  batch=1, verbose=True, DEBUG=False, GPU=0, modelfile="LSTM-fold_all-mixedtrain0.h5", save_model=False):
+def prediction(data_in,  batch=1, verbose=True, DEBUG=False, GPU=0, modelfile="LSTM_weights_keplerSC.h5", save_model=False):
     '''
     Runs the prediction.
     
@@ -288,7 +288,7 @@ if __name__ == "__main__":
     debug = False
     gpu=0
 
-    modelfile="LSTM-fold_all-mixedtrain0.h5"
+    modelfile="LSTM_weights_keplerSC.h5"
 
     try:
         opts, args = getopt.getopt( sys.argv[1:], "hn:db:m:",\
