@@ -140,9 +140,9 @@ def read_data(data_in, cadence=1./60/24):
     
 
     if FILE_INPUT:
-        return( np.array( [t, fl, time, flux] ) )
+        return( [t, fl, time, flux] )
     else:
-        return( np.array( [t, fl] ) )
+        return( [t, fl] )
 
 
 
