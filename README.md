@@ -1,4 +1,4 @@
-# FLATW'RM2 - coming soon!
+# FLATW'RM2 
 
 FLATW'RM2 is a deep learning code that was developed to detect flares in light curves obtained by space observatories (like Kepler or TESS).
 
@@ -10,10 +10,14 @@ The code depends on the following packages:
 * scipy
 * matplotlib (for testing)
 
+Additionally, for `ocelot-gym.py`, if you want to create your own artificial training files for any reason, you will need `pyMacula` and the analog flare model for injection from Davenport (2016ApJ...829...23D) in the `aflare.py` file.
+
 To use the network with the current weight file and a batch size of 16 on GPU 2, use:
-`./flatwrm2-predict.py -m LSTM-fold_all-mixedtrain0.h5 -b 16 --gpu=2 light_curve.dat`
-multithread processing is partly implemented, but didn't seem to be effective, so it's commented out at the end, and `--number=2` or larger doesn't do anything, just turns off verbosity. For general help on usage, try:
-`./flatwrm2-predict.py --help`.
+`./flatwrm2.py -m LSTM_weights_keplerSC.h5 -b 16 --gpu=2 light_curve.dat`
+For general help on usage, try:
+`./flatwrm2.py --help`. 
+
+Alternatively, you can use `flatwrm2` as a module from jupyter-notebook, check the `example.ipynb` notebook for more examples.
 
 
 For retraining the network, you can use the `ocelot-gym` code to generate artificial spotted, flaring light curves, but these shouldn't be the only training data for the network, make sure there is enough real light curves with the flares flagged in it.
