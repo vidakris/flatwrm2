@@ -1,5 +1,6 @@
-#!/usr/bin/env /opt/tljh/user/bin/python
 #!/usr/bin/env python3
+#!/usr/bin/env /opt/tljh/user/bin/python
+#If you have trouble with CUDA, you might have to change the python path
 # coding: utf-8
 
 
