@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.optimize import least_squares
 from scipy.signal import medfilt
 from scipy.interpolate import interp1d
@@ -202,6 +201,9 @@ def get_flares(lc, pred_probability_cut=0.5,
                stella=False,
                plotting=False,
                debug=False):
+
+    if plotting:
+        import matplotlib.pyplot as plt
 
     # Get flare positions
     um = lc[:,2]>pred_probability_cut

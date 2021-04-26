@@ -53,7 +53,7 @@ def aflare(t, p):
                                         _fd[2]*np.exp( ((x-p[0+i*3])/p[1+i*3])*_fd[3] ))]
                             ) * p[2+i*3] # amplitude
         flare = flare + outm
-        
+
     return flare
 
 
