@@ -20,6 +20,8 @@ For general help on usage, try:
 
 Alternatively, you can use `flatwrm2` as a module from jupyter-notebook, check the `example.ipynb` notebook in the examples.
 
+The attached `.h5` weight files are the results from training the network on artificial data and Kepler light curves, `LSTM_weights_keplerSC_only.h5` was trained on Kepler light curves only. The result of a K-fold training is also available for determining uncertainty in the prediction.
+
 
 For retraining the network, you can use the `ocelot-gym` code to generate artificial spotted, flaring light curves, but these shouldn't be the only training data for the network, make sure there is enough real light curves with the flares flagged in it.
 
