@@ -23,7 +23,8 @@ The code depends on the following packages:
 Additionally, for `ocelot-gym.py`, if you want to create your own artificial training files for any reason, you will need `pyMacula` and the analog flare model for injection from Davenport (2016ApJ...829...23D) in the `aflare.py` file.
 
 To install the code, use
-```git clone https://github.com/vidakris/flatwrm2
+```bash
+git clone https://github.com/vidakris/flatwrm2
 cd flatwrm2
 python setup.py install 
 ```
