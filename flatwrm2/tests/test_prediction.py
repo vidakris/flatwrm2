@@ -20,4 +20,4 @@ def test_prediction_validation():
                             progressbar=True,
                         )
 
-    assert( flares.shape[0] == 18 )
+    assert( flares.shape[0] == 31 )
