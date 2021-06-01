@@ -4,7 +4,7 @@
 
 # FLATW'RM2
 
-FLATW'RM2 is a deep learning code that was developed to detect flares in light curves obtained by space observatories (like Kepler or TESS). For more details, see __link to arXiv/ADS__
+FLATW'RM2 is a deep learning code that was developed to detect flares in light curves obtained by space observatories (like Kepler or TESS). For more details, see the paper on <a href="https://arxiv.org/abs/2105.11485">arXiv</a>.
 
 The code was developed using <a href="https://keras.io">Keras</a>: a deep learning API built on Tensorflow.
 
