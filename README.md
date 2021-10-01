@@ -46,6 +46,10 @@ For retraining the network, you can use the `ocelot-gym` code to generate artifi
 
 Once you have your training data, you can use the `flatwrm2-training.ipynb` notebook to train your network, either from scratch, or starting from one of the weight files. The runtime of the training is in the order of 5-10 hours on a single GPU.
 
+## Docker image
+
+FLATW'RM2 is available as a docker image, see https://hub.docker.com/r/vidakris/flatwrm2 for details. The image currently supports CPU-only calculations, CUDA is not yet implemented.
+
 <!--<img src="flatwrm-mark2.png" width="250">-->
 <p align="center">
   <br><br>
