@@ -48,7 +48,7 @@ Once you have your training data, you can use the `flatwrm2-training.ipynb` note
 
 ## Docker image
 
-FLATW'RM2 is available as a docker image, see https://hub.docker.com/r/vidakris/flatwrm2 for details. The image currently supports CPU-only calculations, CUDA is not yet implemented.
+FLATW'RM2 is available as a docker image, see https://hub.docker.com/r/vidakris/flatwrm2 for details. The image supports both CPU-only, and GPU-based calculations based on nvidia-docker.
 
 <!--<img src="flatwrm-mark2.png" width="250">-->
 <p align="center">
