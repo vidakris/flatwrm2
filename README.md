@@ -8,6 +8,8 @@ FLATW'RM2 is a deep learning code that was developed to detect flares in light c
 
 The code was developed using <a href="https://keras.io">Keras</a>: a deep learning API built on Tensorflow.
 
+There are separate weight files available for Kepler and TESS data (see below). If you just need a large, vetted catalog of stellar flares, you can use the <a href="https://zenodo.org/records/14179313">database</a> from TESS flares from the paper <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv241212989S/abstract"><i>Stellar flare morphology with TESS across the main sequence</i></a>.
+
 ## Installation
 
 The code depends on the following packages:
@@ -39,6 +41,8 @@ For general help on usage, try:
 Alternatively, you can use `flatwrm2` as a module from jupyter-notebook, check the `example.ipynb` notebook in the examples.
 
 The attached `.h5` weight files are the results from training the network on artificial data and Kepler light curves, `LSTM_weights_keplerSC_only.h5` was trained on Kepler light curves only. The result of a K-fold training is also available for determining uncertainty in the prediction.
+
+For TESS light curves, use `LSTM_weights_tess.h5`, that was used in <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv241212989S/abstract"><i>Stellar flare morphology with TESS across the main sequence</i></a>.
 
 ## Retraining the network 
 
